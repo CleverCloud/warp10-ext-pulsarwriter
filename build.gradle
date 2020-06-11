@@ -1,0 +1,66 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '4.0.3'
+}
+
+wrapper {
+  distributionType = Wrapper.DistributionType.ALL
+}
+
+repositories {
+    jcenter()
+    
+    maven {
+      url 'https://dl.bintray.com/senx/maven'
+    }
+
+    maven {
+      url 'https://dl.bintray.com/hbs/maven'
+    }
+
+    maven {
+      url 'https://dl.bintray.com/clevercloud/maven'
+    }
+        
+    maven {
+      url 'https://repository.apache.org/content/groups/public'
+    }
+    
+    mavenCentral()
+    
+    mavenLocal()
+    
+    maven {
+      url "http://maven.twttr.com"
+    }
+
+    maven {
+      url "https://nexus.bedatadriven.com/content/repositories/public/"
+    }
+}
+
+configurations {
+    provided
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'io.warp10:warpscript:+'
+    compile 'jline:jline:2.11'
+    compile 'org.apache.pulsar:pulsar-client:2.5.0'
+    //compile 'com.clever-cloud:biscuit-pulsar:1.1.10'
+}
+
+sourceSets {
+    main {
+        compileClasspath = compileClasspath + configurations.provided
+    }
+}
+
+shadowJar {
+    classifier = ''
+    manifest {
+       attributes("Implementation-Title": "Warp 10 Pulsar Writer Extension")
+       attributes("Implementation-Version": "1.0")
+   }
+}
