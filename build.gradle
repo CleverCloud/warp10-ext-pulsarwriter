@@ -44,11 +44,11 @@ configurations {
 }
 
 dependencies {
-    compile 'org.slf4j:slf4j-api:1.7.13'
-    compile 'io.warp10:warpscript:+'
-    compile 'jline:jline:2.11'
-    compile 'org.apache.pulsar:pulsar-client:2.5.0'
-    //compile 'com.clever-cloud:biscuit-pulsar:1.1.10'
+    implementation 'org.slf4j:slf4j-api:1.7.13'
+    implementation 'io.warp10:warpscript:2.6.0'
+    implementation 'jline:jline:2.11'
+    implementation 'org.apache.pulsar:pulsar-client:2.5.0'
+    implementation 'com.clever-cloud:biscuit-pulsar:1.1.13'
 }
 
 sourceSets {
@@ -63,4 +63,5 @@ shadowJar {
        attributes("Implementation-Title": "Warp 10 Pulsar Writer Extension")
        attributes("Implementation-Version": "1.0")
    }
+   zip64 true
 }
