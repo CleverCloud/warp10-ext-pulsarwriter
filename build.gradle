@@ -65,6 +65,8 @@ shadowJar {
     }
     dependencies {
       exclude(dependency('io.warp10:warpscript'))
+      exclude(dependency('org.slf4j:slf4j-api'))
+      exclude(dependency('jline:jline'))
     }
     zip64 true
 }
