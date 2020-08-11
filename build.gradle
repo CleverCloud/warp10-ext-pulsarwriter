@@ -62,6 +62,9 @@ shadowJar {
     manifest {
        attributes("Implementation-Title": "Warp 10 Pulsar Writer Extension")
        attributes("Implementation-Version": "1.0")
-   }
-   zip64 true
+    }
+    dependencies {
+      exclude(dependency('io.warp10:warpscript'))
+    }
+    zip64 true
 }
