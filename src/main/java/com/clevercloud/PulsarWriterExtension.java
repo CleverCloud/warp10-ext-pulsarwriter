@@ -1,4 +1,4 @@
-package com.clevercloud.warp10.script.ext.pulsarwriter;
+package com.clevercloud;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,17 +1,16 @@
-package com.clevercloud.warp10.script.ext.pulsarwriter;
+package com.clevercloud;
 
 import java.util.Map;
+import java.util.HashMap;
+import io.vavr.collection.List;
 
 import com.clevercloud.biscuitpulsar.AuthenticationBiscuit;
-
-import java.util.HashMap;
 
 import org.apache.pulsar.client.api.Producer;
 import org.apache.pulsar.client.api.PulsarClient;
 import org.apache.pulsar.client.api.PulsarClientException;
 import org.apache.pulsar.client.api.Schema;
 
-import io.vavr.collection.List;
 import io.warp10.script.NamedWarpScriptFunction;
 import io.warp10.script.WarpScriptException;
 import io.warp10.script.WarpScriptStack;

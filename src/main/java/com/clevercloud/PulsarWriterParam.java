@@ -1,4 +1,4 @@
-package com.clevercloud.warp10.script.ext.pulsarwriter;
+package com.clevercloud;
 
 public enum PulsarWriterParam {
   BISCUIT ("biscuit", "class java.lang.String"),

@@ -1,0 +1,54 @@
+<%
+  {
+    'name' 'SENDTOPULSAR'
+    'since' '0.1.0'
+    'deprecated' ''
+    'deleted' ''
+    'version' 'all'
+    'tags' [ 'extensions' ]
+    'desc'
+<'
+WarpScript function to send data to a Pulsar topic
+'>
+
+    'sig' [ 
+      [
+        [
+          {
+            'biscuit' 'biscuit:STRING'
+            'endpoint' 'endpoint:STRING'
+            'topic' 'topic:STRING'
+          }
+          'data':STRING ]
+        []
+      ]
+    ]
+
+    'params' {
+      'data' 'The string to be sent to the Pulsar topic'
+      'biscuit' 'A biscuit token which authorizes writes to the specified topic'
+      'endpoint' 'Pulsar endpoint, e.g. pulsar+ssl://hostname.tld:1234'
+      'topic' 'Pulsar topic, e.g. tenant/namespace/mytopic'
+    }
+
+    'related' [ ]
+
+    'examples' [ 
+<'
+'your data'
+{
+ 'biscuit' 'dGhpcyBpcyBub3QgYW4gYWN0dWFsIGJpc2N1aXQgdG9rZW4K'
+ 'endpoint' 'pulsar+ssl://hostname.tld:1234'
+ 'topic' 'tenant/namespace/mytopic'
+}
+SENDTOPULSAR
+'>
+    ]
+
+    'conf' [ ]
+
+    'ext' 'com.clevercloud.PulsarWriterExtension' 
+
+  } INFO
+
+%>
