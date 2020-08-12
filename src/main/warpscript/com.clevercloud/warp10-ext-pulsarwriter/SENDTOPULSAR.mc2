@@ -19,7 +19,7 @@ WarpScript function to send data to a Pulsar topic
             'endpoint' 'endpoint:STRING'
             'topic' 'topic:STRING'
           }
-          'data':STRING ]
+          'data:STRING' ]
         []
       ]
     ]
