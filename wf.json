@@ -2,7 +2,7 @@
   "type": "ext",
   "group": "com.clevercloud",
   "artifact": "warp10-ext-pulsarwriter",
-  "version": "0.1.0-uberjar",
+  "version": "0.1.1-uberjar",
   "description": "WarpScript function to send data to a Pulsar topic",
   "author": "Alexandre Berthaud",
   "email": "alexandre.berthaud@clever-cloud.com",
