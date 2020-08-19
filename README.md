@@ -2,7 +2,7 @@
 
 WarpScript function to send data to a Pulsar topic.
 
-This extension is vaillable using warp10 fleet here https://warpfleet.senx.io/browse/com.clevercloud/warp10-ext-pulsarwriter
+This extension is available on WarpFleet: https://warpfleet.senx.io/browse/com.clevercloud/warp10-ext-pulsarwriter
 
 ## Example
 
